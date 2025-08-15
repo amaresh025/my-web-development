@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
 }
 
 .danger {
@@ -10,12 +12,17 @@
     height: 100vh;
     background-image: url(sky01.jpg);
     background-size: cover;
+    z-index: 1;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
+    position: absolute;
+    gap: 30px;
+    position: relative;
 
 
 
@@ -35,19 +42,19 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
-    transition: 0.3s ease;
 
 }
 
-nav ul li a :hover ::after {
-    color: rgb(83, 146, 234);
-    transition-duration: 0.3s;
-    scale: 3;
+ul :hover {
+    color: rgb(104, 204, 204);
+    transition: all 0.8s ease-in-out;
+
 }
 
 
 h2 {
     margin: 30px;
+    position: relative;
     color: rgb(23, 122, 122);
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -60,18 +67,17 @@ span {
 button {
     margin: 30px;
     font-size: 23px;
+    position: relative;
     border: none;
     padding: 10px 20px;
     color: white;
     border-radius: 30px;
     background-color: rgb(83, 146, 234);
-    align-items: center;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button:honver {
-    background-color: rgb(60, 120, 200);
-    color: white;
-    transition: 0.3s ease;
+button:hover {
+    background-color: rgb(62, 120, 200); /* darker blue on hover */
+    transform: scale(1.05); /* thoda bada effect */
 }
