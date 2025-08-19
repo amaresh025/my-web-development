@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+}
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+}
+a{
+    margin-right: 200px;
+    text-decoration: none;
+   font-family: sans-serif;
+   font-weight: 400;
+}
+
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+button{
+    color: rgb(105, 94, 94);
+    background-color: #f08804;
+}
+.welcome{
+    color: black;
+    margin-top: 50%;
+    text-align: center;
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
